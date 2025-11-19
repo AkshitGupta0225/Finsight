@@ -1,242 +1,172 @@
-📈 FinSight – Intelligent Stock Portfolio Analyzer
+<div align="center">
 
-A modern, ML-powered, interactive stock analytics and portfolio management app built with Streamlit, yfinance, SQLite, Plotly, Finnhub API, scikit-learn, and a custom floating AI advisor.
+# 🌟 **FinSight**
+### **AI-Powered Investment Intelligence Dashboard**
 
-🚀 Features
-✅ 1. User Authentication
+A modern portfolio analytics platform featuring  
+**real-time market data, ML predictions, news sentiment, crypto analytics, deep portfolio insights, and an on-screen AI financial assistant.**  
+Built entirely with **Streamlit + Python**.
 
-Secure login & registration system
+---
 
-Password hashing using bcrypt
+<img src="https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge">
+<img src="https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge">
+<img src="https://img.shields.io/badge/Finance-Analytics-0A2540?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI-Advisor-6A5ACD?style=for-the-badge">
+<img src="https://img.shields.io/badge/ML-Predictions-34D399?style=for-the-badge">
 
-Password reset functionality
+---
 
-✅ 2. Multi-Portfolio Management
+### **A cleaner, smarter, dynamic way to understand your investments.**
 
-Create multiple portfolios
+</div>
 
-Add or remove stocks
+---
 
-Track shares, buy price, market value, and PnL
+## 🚀 **Overview**
 
-Export portfolio as CSV or Excel
+FinSight is more than a stock tracker — it’s an **intelligent investment command center**.
 
-✅ 3. Interactive Dashboard
+It blends:
 
-Live price tracking
+- Real-time stock and crypto insights  
+- Multi-portfolio tracking  
+- AI-driven recommendations  
+- Automated risk analytics  
+- Sector & diversification intelligence  
+- A floating advisor chatbot  
+- A 25-stock animated ticker bar  
 
-Dynamic trend charts (6 months, 1 year, 2 years)
+All inside a beautifully engineered Streamlit UI with dark/light modes.
 
-Profit/Loss pie charts
+---
 
-Portfolio growth timeline
+# ✨ **Core Features**
 
-✅ 4. Global Live Ticker Bar
+## **1. Authentication & User System**
+- Secure login / register / password reset  
+- bcrypt hashed passwords  
+- Multi-portfolio support  
 
-A beautiful animated ticker showing 25 real-time stock price changes with colored price movement indicators.
+---
 
-✅ 5. Price Alerts
+## **2. Portfolio Intelligence Dashboard**
+- Live PnL tracking  
+- Current price auto-fetch  
+- Trend charts (6m, 1y, 2y)  
+- Profit vs loss insight  
+- Export to CSV/Excel  
 
-Set alerts for:
+---
 
-% price movement
+## **3. Animated Global Ticker Bar**
+A financial-news style moving ticker showing  
+**25 major stocks with auto-colored performance indicators**.
 
-Up, down, or any movement
+---
 
-Optional email notifications using SMTP
+## **4. Price Alerts Engine**
+Create alerts for:
+- % price change  
+- Direction (up/down/any)  
+- Optional email notifications  
 
-Alerts trigger automatically and display in app.
+---
 
-✅ 6. Watchlist with Live Charts
+## **5. Watchlist + Sparkline Trends**
+- Quick-view mini charts  
+- Auto-updated price & change  
+- 1-year Candlestick deep charts  
 
-Select stocks to watch
+---
 
-Mini sparkline charts
+## **6. Risk Analytics**
+Professional portfolio risk suite:
+- Sharpe Ratio  
+- Beta vs indices  
+- Annualized volatility  
+- Correlation heatmap  
 
-1-year candlestick detailed chart
+---
 
-✅ 7. Risk & Correlation Analytics
+## **7. Sector Allocation**
+Visual diversification:
+- Allocation pie  
+- Hierarchical treemap  
+- Over-concentration detection  
 
-Includes:
+---
 
-Sharpe Ratio
+## **8. Benchmark Comparison**
+Compare your stocks against:
+- S&P 500  
+- NIFTY 50  
+- Sensex  
 
-Beta vs benchmark
+Performance normalized to 100 for clarity.
 
-Annualized volatility
+---
 
-Correlation heatmap (for all portfolio stocks)
+## **9. Crypto Dashboard**
+Supports: **BTC, ETH, SOL, XRP**
 
-✅ 8. Sector Allocation & Concentration
+Metrics include:
+- Returns  
+- Annualized volatility  
+- Full price charts  
 
-Smart sector detection (via yfinance and fallback mapping)
+---
 
-Pie chart of allocation
+## **10. Market News + Sentiment**
+Powered by Finnhub API:
 
-Treemap of holdings
+- Latest company news  
+- Summaries  
+- Sentiment classification  
+- Clickable headlines  
 
-Concentration risk warnings
+---
 
-✅ 9. Benchmark Comparison
+## **11. Machine Learning Advisor**
+A Random Forest model trained on 5 years of data:
 
-Compare individual stocks with:
+- SMA ratios  
+- MACD  
+- RSI  
+- Volatility  
+- Daily/weekly returns  
 
-S&P 500
+Outputs:
+- **BUY / AVOID signal**  
+- Probability score  
+- CV metrics (Accuracy, AUC, Precision, Recall)  
 
-NIFTY 50
+---
 
-Sensex
+## **12. Floating AI Chat Assistant**
+Persistent, modern mini-chatbox offering:
+- Risk guidelines  
+- Portfolio hygiene checks  
+- Basic stock insights  
+- Quick technical sanity checks  
 
-Performance normalized to index = 100.
+---
 
-✅ 10. Crypto Analytics
+# 🛠️ **Tech Stack**
 
-Supports:
+| Layer | Technologies |
+|-------|--------------|
+| Frontend | Streamlit, HTML/CSS, Plotly |
+| Backend | Python, SQLite, bcrypt |
+| APIs | Finnhub, yFinance |
+| ML | scikit-learn, feature engineering |
 
-BTC, ETH, SOL, XRP
-Shows:
+---
 
-Volatility
+# 📦 **Installation**
 
-Sparkline chart
-
-Returns
-
-Close price timeline
-
-✅ 11. Market News + Sentiment Analysis
-
-Using Finnhub API:
-
-Latest company news
-
-Clickable headlines
-
-Sentiment score (Positive / Neutral / Negative)
-
-Progress bar for compound sentiment score
-
-✅ 12. ML-Powered Stock Advisor
-
-Machine Learning model using:
-
-Random Forest Classifier
-
-5-year historical stock data
-
-Technical indicators: RSI, EMA, MACD, SMA ratios, volatility
-
-Predicts 🔮
-“BUY” or “AVOID” along with probability
-
-Displays:
-
-Accuracy
-
-ROC AUC
-
-Precision & Recall
-
-Predictions for each selected stock
-
-✅ 13. Floating AI Chatbot
-
-A sleek interactive chatbot providing:
-
-Risk tips
-
-Diversification guidance
-
-Quick momentum hints
-
-Basic sentiment interpretation
-
-Always visible in bottom-right corner.
-
-✅ 14. Theme Toggle (Dark / Light Mode)
-
-Dynamic theme switching using custom CSS.
-
-🛠️ Tech Stack
-Frontend
-
-Streamlit
-
-Custom CSS
-
-Plotly (interactive charts)
-
-Backend
-
-Python
-
-SQLite (users, portfolios, alerts)
-
-Finnhub API (news)
-
-yfinance (stock & crypto data)
-
-Machine Learning
-
-scikit-learn (Random Forest, TimeSeriesSplit)
-
-Feature engineering (RSI, SMA, MACD, volatility)
-
-📦 Requirements
-streamlit
-yfinance
-pandas
-numpy
-plotly
-sqlite3
-bcrypt
-finnhub-python
-vaderSentiment
-scikit-learn
-requests
-
-▶️ How to Run
-
-Clone the repository:
-
+```bash
 git clone <repo-url>
-cd finsight
-
-
-Install dependencies:
-
+cd FinSight
 pip install -r requirements.txt
-
-
-Run the app:
-
 streamlit run g.py
-
-
-(Optional) Add SMTP credentials to .streamlit/secrets.toml:
-
-smtp_host="smtp.gmail.com"
-smtp_port=587
-smtp_user="your_email@gmail.com"
-smtp_pass="your_password"
-from_email="your_email@gmail.com"
-
-📚 Folder Structure
-/FinSight
-│── g.py                 # Main Streamlit app
-│── users.db             # User login database
-│── portfolio.db         # Stocks & portfolio data
-│── requirements.txt
-│── README.md
-
-🤝 Contributions
-
-Pull requests are welcome—especially improvements to:
-
-ML model
-
-UI/UX
-
-Crypto analytics
-
-Advisor logic
